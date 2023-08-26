@@ -1,0 +1,266 @@
+:root{
+    
+      --orange-color:#DA722C;
+      --dark-blue-color:#023047;
+      --dark-color: #070917;
+      --light-color: #E8F7FB;
+      --light-blue-color:#6F7DFB;
+
+}
+*,
+*::after,
+*::before{
+        box-sizing: border-box;
+}
+/* It used to create padding and border while giving the width */
+body{
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+       max-width: 1134px;
+       margin:0 auto;
+}
+.btn{
+    display:inline-block;
+    padding: 16px 32px;
+    border-radius: 24px;
+    text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     color: #FFF;
+    position: relative;
+}
+.btn.dark{
+
+      background: var(--dark-blue-color);
+}
+.btn.light{
+      background: var(--orange-color);
+      padding-left: 42px;
+      padding-right: 32px;
+}
+.btn.enrol-icon::before{
+       content: url(images/enrol_icon.svg);
+       width: 18px;
+       height: 18px;
+       position: absolute;
+       top: 20px;
+       left: 32px;
+       transform: translateX(-50%);
+       /* padding-right: 10px; */
+
+}
+/* .btn.enrol-icon{
+    padding: 50px;
+} */
+
+/* header part styling */
+    header{
+          background: linear-gradient(180deg,#6F7DFB 0%,#26308C 100%);
+          height:100vh;
+          width:100%;
+    }
+   nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 1134px;
+        top: 0;
+        padding: 36px 0;
+        z-index: 100;
+   } 
+   .Logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFF;
+   }
+   ul{
+         display:flex;
+         align-items: center;
+         gap: 60px;
+         list-style: none;
+         margin: 0,auto;
+   }
+   ul,li,a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+   }
+   .achievment-cards{
+      display:none;
+   }
+   .hero-section{
+      height: 100vh;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;         
+   }
+   .hero-section .left  h1 {
+      width: 457px;
+      color: #FFF;
+      font-family: Raleway;
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 125%; /* 62.5px */
+      margin-bottom: 18px;
+} 
+.hero-section .left p{
+      width: 457px;
+      color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; /* 32px */
+margin-bottom: 39px;
+
+}
+.hero-section .left{
+        flex:1;
+}
+.hero-section .right{
+      align-self: flex-end;
+}
+.hero-section .right img{
+
+      height: 582px;
+      vertical-align: middle;
+      margin-left: 300px;
+}
+.achievment-cards{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+}
+
+.achievment-cards .student-enrolled .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+height: 90px;
+gap: -80px;
+border-radius: 24px;
+background: #FFF;
+top: 5px;
+right:480px ;
+z-index: 100;
+margin-bottom: 500px;
+position: absolute;         
+}
+.achievment-cards .student-enrolled .bg{
+        position: absolute;
+        width: 206px;
+        height: 97px;
+        flex-shrink: 0;
+        border-radius: 24px;
+background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+top:5px;
+left: -680px;
+
+}
+.achievment-cards .student-enrolled .content h3{
+      margin-bottom: -10px;
+
+font-size: 36px;
+font-weight: 700;
+line-height: 125%;
+}
+.achievment-cards .student-enrolled .content p{
+      margin-bottom: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 125%;
+      }
+      
+
+.achievment-cards .Overall-ratings .content1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: flex-end;
+      width: 183px;
+      height: 90px;
+      flex-shrink: 0;
+      border-radius: 24px;
+background: #FFF;
+ top: 170px;
+left: -755px;
+z-index: 100;
+position: absolute;
+       
+}
+
+.achievment-cards .Overall-ratings .bg{
+        position: absolute;
+        width: 185px;
+height: 95px;
+flex-shrink: 0;
+border-radius: 24px;
+background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+top: 170px;
+left: -750px;
+}
+
+.achievment-cards .Overall-ratings .content1 h3{
+      display: inline;
+      color: #023047;
+font-family: Poppins;
+font-size: 36px;
+font-weight: 700;
+line-height: 125%; /* 45px */
+ margin-top: 40px;
+ margin-left: 40px;
+ margin-bottom: 20px;
+ padding-top: 10px;
+ padding-bottom: 0;
+ width: 54px;
+height: 45px;
+/* top: 571px;
+left: 500px */
+
+}
+.achievment-cards .Overall-ratings .content1 img{
+      /* margin-top: 15px; */
+      width: 41.25px;
+      height: 39.98px;
+      top: 2.067x;
+      left: 2px;
+      margin-bottom: -15px;
+      
+}
+
+.achievment-cards .Overall-ratings .content1 p{
+      color: #023047;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 20px */
+margin-left: 30px;
+margin-bottom: 90px;
+margin-top: 5px;
+}
+  
+/* .achievment-cards .Overall-ratings .content1 .content2 h3 img{ 
+        /* display: inline; */
+        /* text-align: center; */
+        /* left: -200px; */
+         
+        
+/* } */
+
+
+     
+
+

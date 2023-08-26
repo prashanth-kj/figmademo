@@ -1,0 +1,17 @@
+steps:- 
+   
+ Fonts:- 
+   =>Raleway
+   =>Poppins
+
+ Colours:-  
+    => #DA722C 
+    => #057ADA 
+    => #E8F7FB
+    => #023047
+    => #070917
+    => #6F7DFB
+
+ icons and images export  
+
+
